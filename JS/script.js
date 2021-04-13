@@ -18,9 +18,11 @@ var tantiStundeti = [
 ]
 
 for (var i = 0; i < tantiStundeti.length; i++){
-    var nomiStud = tantiStundeti[i];
-    console.log('Nomi: ', nomiStud);
-    for (var j = 0; i < tantiStundeti[i].length; i++) {
-        console.log('Cognomi: ', nomiStud[j]);
+    //var nomiStud = tantiStundeti[i];
+    console.log(tantiStundeti[i]);
+    console.log('Nomi: ' + (i + 1) );
+    for (var j = 0; i < tantiStundeti[i].length; j++) {
+        console.log('Cognomi: ' + tantiStundeti[i][j]);
+        break;
     }
 }
