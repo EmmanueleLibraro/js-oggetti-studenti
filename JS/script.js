@@ -49,12 +49,11 @@ var cognome = prompt("Scrivi cognome").trim();
 var eta = prompt("Scrivi età").trim();
 
 //CREAZIONE OGGETTO
-var nuovoStudent = [
+var nuovoStudent = {
     nome: nome,
     cognome: cognome,
     eta: eta,
-]
-
+}   
 tantiStundenti.push(nuovoStudent);
 console.log(tantiStundenti);
 
