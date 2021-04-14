@@ -9,20 +9,54 @@ var caratteristicheStudenti = {
 }
 
 for (var key in caratteristicheStudenti){
-    console.log(key, caratteristicheStudenti[key]);         //PER RICHIAMARE LE INFO STUDENTI
+    console.log(key + ': ' + caratteristicheStudenti[key]);         //PER RICHIAMARE LE INFO STUDENTI
 }
 
-var tantiStundeti = [
-    ["anna, rosa, tina, peppe"],
-    ["verdi, bianchi, liberto, arlo"],
+
+var tantiStundenti = [
+    {
+        nome : "alberto",                   //ARRAY DI OGGETTI
+        cognome : "rossi",                  //INFO STUDENTI
+        eta : 20,
+    },
+    {
+        nome : "rita",
+        cognome : "bianchi",
+        eta : 18,
+    },
+    {
+        nome : "roberto",
+        cognome : "verdi",
+        eta : 25,
+    }                
+    
 ]
 
-for (var i = 0; i < tantiStundeti.length; i++){
-    //var nomiStud = tantiStundeti[i];
-    console.log(tantiStundeti[i]);
-    console.log('Nomi: ' + (i + 1) );
-    for (var j = 0; i < tantiStundeti[i].length; j++) {
-        console.log('Cognomi: ' + tantiStundeti[i][j]);
-        break;
-    }
+for (var i = 0; i < tantiStundenti.length; i++){
+    var risultato = tantiStundenti[i];
+    console.log(risultato);
 }
+
+console.log("Studente" + (i + 1) );
+console.log("Nome", tantiStundenti.nome);
+console.log("Cognome", tantiStundenti.cognome);
+
+
+
+
+var nome = prompt("Scrivi il tuo nome").trim();
+var cognome = prompt("Scrivi cognome").trim();
+var eta = prompt("Scrivi età").trim();
+
+//CREAZIONE OGGETTO
+var nuovoStudent = [
+    nome: nome,
+    cognome: cognome,
+    eta: eta,
+]
+
+tantiStundenti.push(nuovoStudent);
+console.log(tantiStundenti);
+
+
+
